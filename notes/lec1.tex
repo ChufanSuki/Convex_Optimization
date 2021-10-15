@@ -118,9 +118,6 @@
 % macros follow.  
 %**** IN GENERAL, BE BRIEF. LONG SCRIBE NOTES, NO MATTER HOW WELL WRITTEN,
 %**** ARE NEVER READ BY ANYBODY.
-This lecture's notes illustrate some uses of
-various \LaTeX\ macros.  
-Take a look at this and imitate.
 
 \section{Vectors}
 $$x \in \mathbb{R}^n$$
@@ -222,10 +219,50 @@ Clearly linearly independence of vectors holds or doesn't hold in all bases.
 \subsection{Abstract notion of a vector space}
 A set $\mathcal{V}$ comprised of vectors.\\
 A specific element in \(\mathcal{V}\) called the zero vector (denote 0).\\
-Given $\alpha \in \mathbb{R}, v \in  \mathcal{V}$ there is an element in  $\mathcal{V}$ denoted $\alpha v$(scaling).
-Given $v,w \in  \mathcal{V}$ there is an element denoted $v+w\in  \mathcal{V}$(sum of $v$ and $w$).
+Given $\alpha \in \mathbb{R}, v \in  \mathcal{V}$ there is an element in  $\mathcal{V}$ denoted $\alpha v$(scaling).\\
+Given $v,w \in  \mathcal{V}$ there is an element denoted $v+w\in  \mathcal{V}$(sum of $v$ and $w$).\\
+Must have, for all $u,v,w \in \mathcal{V}$, $\alpha,\beta \in \mathbb{R}$,
+\begin{itemize}
+\item $v+w=w+v$
+\item $u+(v+w)=(u+v)+w$
+\item $v+0=v$
+\item $-v+v=0$
+\item zero scaling of $v$ is the zero vector (i.e. $0v=0$)
+\item scaling of $v$ by 1 gives $v$(i.e. $1v=v$)
+\item $\alpha(\beta v)=(\alpha \beta)v$
+\item $\alpha(u+v)=\alpha u+\alpha v$
+\item $(\alpha+ \beta) v=\alpha v + \beta v$
+\end{itemize}
+
+\subsection{Subspaces, span, basis, dimension, direct sum, in a vector space}
+A subspace of the vector space $\mathcal{V}$ is a subset that is closed under scaling and vector addition.\\
+The span of $\{x^{(1}\hdots x^{(d}\}$ are said to be linearly independent if $\sum_{i=1}a_ix^{(i)}=0 \implies a_i=0 \forall i$\\
+$\{x^{(1}\hdots x^{(d}\}$ is a basis for $\mathcal{V}$ if the vectors are linearly independent and span $\mathcal{V}$.\\
+A finite dimensional vector space is one with a finite basis.\\
+Every basis in a finite dimensional vector space has the same cardinality. This is called the dimension of the vector space.
+
+\begin{lemma}
+Dimension of a finite dimensional vector space is well defined.
+\end{lemma}
+
+\begin{proof}
+Let $\{b_1\hdots b_d\}$ be a basis for $\mathcal{V}$.\\
+Let $\{w_1 w_2 \hdots \}$ be another basis $\mathcal{V}$(with at least $d$ elements).\\
+Take $w_1$, it can be written as $\sum_{k=1}^d a_k b_k$. This means some $b_i$ can be replaced by $w_1$.\\
+So $\{b_1\hdots b_{i-1}, w_1, b_{i+1}\hdots b_d\}$ is a basis.\\
+Similarly, use $w_2$ to replace some $b_j$, $j \neq i$.
+\end{proof}
 
 
+\subsection{Finite dimensional vector space can be identified with $\mathbb{R}^n$ after the choice of basis}
+Let $\{b^{(1}\hdots b^{(d}\}$ be a basis.\\
+Write $x=\sum_{i=1}^{d}a_ib^{(i)} $.\\
+The coefficients $a_i \hdots a_d$ are uniquely defined.\\
+This gives a representation of $x$ as $\begin{bmatrix}
+a_1\\
+\vdots \\
+a_d
+\end{bmatrix}$
 \section{Some theorems and stuff}
  % Don't be this informal in your notes!
 

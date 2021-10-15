@@ -28,9 +28,8 @@ jobs:
         with:
           root_file: "notes/*.tex"
           glob_root_file: true
-          post_compile: "latexmk -c"
 
-      - name: Run a multi-line script
+      - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
           name: pdf-build

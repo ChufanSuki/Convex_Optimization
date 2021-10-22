@@ -263,6 +263,36 @@ a_1\\
 \vdots \\
 a_d
 \end{bmatrix}$
+
+\subsection{Affine translation of a subspace}
+$\mathcal{A}=\{x^{(0)}+\mathcal{S}\}$, $x^{(0)} \in \mathcal{V}$, $\mathcal{S}$ subspace of $\mathcal{V}$,
+$\mathcal{A}$ is called an affine translation of the subspace $\mathcal{S}$.
+
+\subsection{Norm on a vector space}
+A way of measuring $x \in mathcal{V}$ via $||\cdot||: \mathcal{V}\implies \mathbb{R}_{\ge 0}$.\\
+Requirements:\\
+$||x||\ge 0$ for all $x$, with equlaity iff $x=0$.\\
+$||x+y||\le ||x||+||y||$ for $x,y\in \mathcal{V}$.\\
+$||\alpha x||=|\alpha|||x||$ for $\alpha \in \mathbb{R}$, $x\in\mathcal{V}$.\\
+$||x||_2$ for $x \in \mathbb{R}^n$, $||x||_2=(\sum_{i=1}^{n}{x_i^2})^{1/2}$.($l_2$norm)\\
+$||x||_1=\sum_{i=1}^{n}{|x_i|}$.($l_1$norm)\\
+$||x||_{\infty}=\max_{i}{x_i}$.($l_{\infty}$norm)
+
+\subsection{Unit balls in $l_p$ norms}
+
+\subsection{Inner product space}
+Motivated by the construction of $x^Ty$ for $x,y\in \mathbb{R}^n$\\
+Inner product on a vector space:\\
+For all $x,y,z \in \mathcal{V}, \alpha \in \mathbb{R}$, we have:\\
+\begin{itemize}
+\item $<x,x> \ge 0$
+\item $<x,x>=0$iff $x=0$
+\item $<x,y>=<y,x>$
+\item $<x,y+z>=<x,y>+<x,z>$
+\item $<\alpha x,y>=\alpha<x,y>$
+\end{itemize}
+In a inner product space $\sqrt{<x,x>}$ is a norm, which we can write as $||x||_2$.\\
+In $\mathbb{R}^n$ with its usual inner product and only in this case we will use $<x,y> $ and $x^Ty$ interchangebly. 
 \section{Some theorems and stuff}
  % Don't be this informal in your notes!
 

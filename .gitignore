@@ -17,3 +17,13 @@
 **/.swp
 *.gz
 *.pdf
+notes/el.blg
+notes/el.loe
+notes/el.pre
+notes/el.tdo
+notes/lec1/lec1.bbl
+notes/lec1/lec1.blg
+templates/notes-template.pdf
+templates/notes-template.pre
+templates/notes-template.pdf
+*.pdf

@@ -32,9 +32,6 @@
 \end{displayquote}
 \end{center}
 
-
-These are course notes for the Spring 2021 rendition of EECS 127, Optimization Models in Engineering, taught by Professor Laurent El Ghaoui.
-
 \tableofcontents 
 
 \newpage
@@ -58,7 +55,17 @@ This above setup is known as the \emph{standard form}.
 
 Oftentimes we will have multiple optimal solutions to the constraint, in which case any $x^* \in \arg\min f_0(x)$ for which $f_i(x^*) \leq 0, i=1, \dots, m$ is satisfied acts as an optimizer.
 
+Optimization problems underlie nearly everything we do in Machine Learning and Statistics. In other courses, you learn how to translate Conceptual idea to Optimization problem. This course is about how to solve P, and why this is a good skill to have.
+
 In this class, we're not as concerned with algorithms for optimization, but more so translating problems from the real world into this language. 
+
+Why do we bother? Persumably, other people have already figured out how to solve $P: min_{x \in D}f(x)$. Many reasons. Here's three:
+\itemnum
+    \ii Different algorithms can perform better or worse for different problems P (sometimes drastically so)
+    \ii Studying P through an optimization lens can actually give you a deeper understanding of the task/procedure at hand
+    \ii Knowledge of optimization can actually help you create a new problem P that is even more interesting/useful
+\itemend
+Optimization moves quickly as a field. But there is still much room for progress, especially its intersection with ML and Stats.
 
 \begin{example}[Least-squares regression]
 A classic example in machine learning is when we have a given vector $y$ and we're trying to express it as a linear function of an input vector $z$, i.e. data points. 
@@ -194,7 +201,7 @@ Here's a high level overview of what we're talking about:
     \itemend
 \itemend
 
-There will only be six homeworks in this course.
+
 
 \newpage
 \section{Thursday, January 21st: Vectors and Functions}
